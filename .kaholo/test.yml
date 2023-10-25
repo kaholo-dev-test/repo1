@@ -1,5 +1,3 @@
-executionInputs: []
-triggers: []
 steps:
   - params:
       - name: path
@@ -13,5 +11,30 @@ steps:
     agent: null
     retries: null
     nextStep: null
+triggers: []
+executionInputs: []
 kaholoVersion: 6.2.0
 firstStep: clone1
+content: |
+  executionInputs: []
+  triggers: []
+  steps:
+    - params:
+        - name: path
+          value: ''
+          code: false
+      type: clone
+      id: clone1
+      displayName: Clone Git Repo
+      description: iee
+      timeout: null
+      agent: null
+      retries: null
+      nextStep: null
+  kaholoVersion: 6.2.0
+  firstStep: clone1
+name: ''
+description: ''
+agent: agent01
+maxConcurrency: null
+timeout: ''
